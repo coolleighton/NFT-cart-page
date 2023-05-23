@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClosedSea</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <body>
+    <div class="container">
+
+      <header>
+        <div class="banner">
+          <h2>ClosedSea</h2>
+          <p>The #1 NFT marketplace on the blockchain </p>
+        </div>
+      </header>
+
+      <section class="main">
+        <div id="section-container" class="section-container">
+        </div>
+      </section>
+
+      <section id="total-div" class="bottom-menu hidden">
+        <div class="bottom-menu-container"> 
+
+          <h3>Your Items</h3>
+
+          <div id="cart-items" class="cart-items">
+          </div>
+
+          <div class="total">
+            <p>Total Price </p>
+            <p>£<span id="total-price">0.00</span></p>
+          </div>
+          <button id="proceed-btn">Proceed to payment</button>
+
+        </div>
+      </section>
+
+      <section id="payment-popup" class="payment-popup hidden">
+        <div class="payment-popup-div">
+        <h3>Enter Card details</h3>
+        <form id="form">
+          <input id="user-name-input" type="text" required placeholder="enter your name">
+          <input type="text" minlength="16" maxlength="16" required placeholder="enter your card number">
+          <input type="text" minlength="3" maxlength="3" required placeholder="enter your CVV">
+          <button id="pay-btn">Pay</button>
+          <button id="close-btn" class="close-btn">x</button>
+        </form>
+      </div>
+      </section>
+
+      <section id="thankyou-note" class="thankyou-note hidden" >
+        <h3>Thanks <span id="user-name">leighton</span>, your order is on its way.</h3>
+      </section>
+
+    </div>
+    <script src="index.js" type="module" ></script>
+  </body>
+</html>
