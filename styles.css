@@ -246,6 +246,13 @@ header {
     border-radius: 20px;
 }
 
+.git-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
 
 
 
